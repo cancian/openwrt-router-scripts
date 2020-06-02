@@ -7,8 +7,8 @@
 
 #touch rc.sda1.worked
 ##
-rm /etc/resolv.conf
-cp /etc/resolv.conf.opendns /etc/resolv.conf
-cp /root/resolv.conf.opendns /etc/resolv.conf
+#rm /etc/resolv.conf
+cp /etc/resolv.conf.auto /etc/resolv.conf
+#cp /root/resolv.conf.opendns /etc/resolv.conf
 
 exit 0

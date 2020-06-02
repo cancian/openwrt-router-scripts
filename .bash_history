@@ -1,408 +1,165 @@
-log
-dmesg
-log
-redns
-log
-log
-log
-renet
-log
-log
-log
-sysctl -a
-sysctl ipv4
-sysctl ipv4 -a
-sysctl ipv4 
-sysctl 
-sysctl -a
-sysctl net
-sysctl net.ipv4
-sysctl net.ipv4
-sysctl net.ipv4
-sysctl net.ipv4
-sysctl net.ipv4
-sysctl net.ipv4
+cat create_ext4_usb
+cat copyoverlay
+ls /mnt
+mkfs.ext4 /dev/sda1 -UUID=7dda2921-4af7-4e83-9170-92d146366bf3
+mkfs.ext4 /dev/sda1 -UUID=7dda2921-4af7-4e83-9170-92d146366bf3
+mkfs.ext4 /dev/sda1 -UUID=7dda2921-4af7-4e83-9170-92d146366bf3
+mkfs.ext4 /dev/sda1 -UUID=7dda2921-4af7-4e83-9170-92d146366bf3
+mkfs.ext4 /dev/sda1 -UUID=7dda2921-4af7-4e83-9170-92d146366bf3'
+'
+c
 ls
-nano /etc/sysctl.list
-nano /etc/sysctl.list
-nano /etc/sysctl.list
-ls /etc
-nano /etc/sysctl.conf
-sysctl -p
-ifconfig
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-dmesg
-nano /etc/
-dmesg
-dmesg
-dmesg
-dmesg
-cd /etc
+nano all-base
+n all-base
+n
+nano /etc/profile
+nano bin/b
+ls bin
+nano bin /n
+nice -n -20 bash
+up
+install tune2fs
+install kmod-fs-ext4
+install mountd
+nano all
+install blockd
+df
+install htop
+blkid
+install blkid
+blkid
 ls
-nano sysctl.conf
-sysctl -p
-sysctl net.ipv4
-net.ipv4.conf.ip6tnl0.forwarding = 1
-sysctl net.ipv6
-cd root
-cd /root
-ls
-nano set-all-devices-to-forward
-nanox set-all-devices-to-forward
-nanox set-all-devices-to-forward
-ls
-chmod 644 set-all*
-ls
-mv set-all* sysctl-set-all-to-forward
-ls
-nano sysctl-set-all-to-forward
-nano /etc/sysctl.conf
-ls
-cd /etc
-ls
-cd sysctl.conf
-cd sysctl.conf.d
-cd sysctl.d
-ls
-ls /root
-cp /root/sysctl-set-all* .
-ls
-rm *.save
-ls
-rm sysctl 12-all-devices-forwarding
-touch 12-all-devices-forwarding
-rm 12-all-devices-forwarding
-ls
-mv sys* 12-all.forwarding.conf
-ls
-nano 12*
-nano 12*
-nano 12*
-nano 12*
-nano 12*
-nano 12*
-cd /etc
-ls
-cd sysconf.
-cd sysconf.d
-ls
-cd sysctl.d
-ls
-nano 12*
-sysctp -p
-sysctl -p
-sysctl -p
-sysctl 
-sysctl -p
-nano 12*
-ls
-cp 12* /root
-nano 12*
-ls
-nano 10*
-nano 11*
-nano 11*
-ls
-nano 10*
-ls
-nano 10
-nano 10*
-rm 12-*
-ls
-cp 10* /root
-11* /root
+nano all-storage
+nano all-base
+nano all-base
+rm all-base
+rm all-base
+nano all-base
+nanox all-base
+df
+n all-base
+chmod +x * -R
+n all-base
+cd b in
+cd bin
+cd n
+nano n
+nano nsh
 cd ..
 ls
-nano sysupgrade.conf
-nano sysupgrade.confnano resolv.conf
-nano preinit
-cd crontabs
+nsh all-base
+nano all-base
+ all-base
+df
+df
+df
+df
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+up
+rnice
+cd bin
 ls
-cd root
-ls
-nano root
-nano ../rc.local
-nano root
-chown nobody resolv.conf
-chown  resolv.conf nobody
-chown  resolv.conf dns
-chown  resolv.conf cancian
-chown  resolv.conf user
-chown  resolv.conf local
-cp resolv.conf.opendns resolv.conf
-cp resolv.conf.opendns resolv.conf
+nano cnice
+mv cnice rnice
+nano rnice
+rnice
 cd ..
-cp resolv.conf.opendns resolv.conf
-ls
-chmod 644 resolv*
-ls
-nano resolv.conf
-cp resolv.conf.auto resolv.conf
-nano resolv.co
-nano resolv.conf
-cp resolv.conf.opendns resolv.conf
-nano resolv.conf
-cp resolv.conf resolv.conf.auto
-cp resolv.conf resolv.conf.opendns
-rm resolv.conf.hedns
-ls
-cp resolv* /root
-nano syscrl.conf
-nano sysctl.conf
-nano sysctl.conf
-ls
-sysctl.conf
-cd sysctl.conf
-cd sysctl.conf
-cd sysctl.d
-ls
-nano 10-default.conf
-ls
-nano 11*
-sysctl -p
-ls
-cp * /root
-cd ..
-ls
-top
-top -d1
-ls
-ls
-cat /etc/resolv.conf
-cat /etc/hosts
-cat /etc/resolv.conf
-ls
-chmod 777 system.log
-ls
-chmod 444 system.log
-ls
-chmod 666 system.log
-ls
-chmod 711 system.log
-ls
-nano system.log.old
-rm system.log.old
-nano system.log
-rm system.log
-rm system.log
-log
-log
-log
-log
-log
-dmesg
-dmesg
-dmesg
-dmesg
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-dig
-ls
-bind
-ls
-ls
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-htop
-htop
-log
-log
-log
-htop
-ls
-top
-ls
+install
+installbb
 df
-log
-log
-log
-log
-log
-log
-opkg install tail
-opkg update
-tail
-log
-log
-log
-log
-log
-log
-log
-log
-log
-top
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-ls
-cat sysctl.list
-ls
-nano sysctl.list
-ls
-cd /
-ls
-cd etc
-ls
-cd /
-ls
-nano init
-nano /etc/resolv.conf
-nano /etc/hosts
-nano /etc/hosts
-log
-log
-log
-log
-log
-service log
-service log enable
-
-log
-log
-df
-df
-top
-ls
-top
-tail -f /tmp/system.log
-uname -a
-nanox tailog
-tail -h
-tail -s 1 -f /tmp/system.log
-tail -s 1 -f /tmp/system.log
-nanox tailog
-tailog
-log
-lohg
-log
-log
-log
-tail
-nano tailog
-tailog
-tailog
-nano tailog
-tailog
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-tailog
-tailog
-tail -f /tmp/system.log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-log
-tailog
-top
-top
-top
-tcpdump -i eth0.2
-tcpdump -i eth0.1
-tcpdump -i et
-tdump
-top
-tdump
-iftop
-iftop -i eth0.2
-nano /etc/config/dhcp
 reboot
-tailog
-iftop -i eth0.2
-tdump
-wandump
-tailog
+df
+Logitech Unifying for Chrome
+nano all
+nano all-storage
+up; install all-storage-uas
+up; install kmod-usb-storage-uas
+tlog
+dmesg
+up; install kmod-usb-storage-uas
+tlog
 log
 log
 log
@@ -410,91 +167,334 @@ log
 log
 log
 log
+syslog
+sysevents
+log
+logread -h
+ifstat
+iftop
+top
+renice -n -20 -u root dnsmasq
+htop -d1
+up; install proc-ujail
+ofind ujail
+ofind jail
+up; 
+ls bin
+upgrade-all.sh
+renice
+installbb
+cp /usr/sbin/renice /
+cp /usr/bin/renice /
+cp /usr/bin/renice /root
+cp /usr/bin/renice /root/renice.file
+cp /usr/bin/renice /sbin
+cp /usr/bin/renice /bin
+cp /usr/bin/renice /usr/bin
+cp /usr/bin/renice /usr/sbin
+upgrade-all.sh
+y
+y
+upgrade-all.sh
+renice
+/usr/bin/renice
+/usr/sbin/renice
+cp /usr/sbin/renice /usr/bin/renice
+cp /usr/sbin/renice /root
+ls
+rnice
+hto
+htop
+install iftop tcpdump ifstat 
+lx
+ls
+nano all-storage
+nano all-base
+nano all
+htop
+all
+sudo apt-get install build-essential libncurses5-dev gawk git libssl-dev gettext unzip zlib1g-dev file python
+libncurses5-dev gawk git libssl-dev gettext unzip zlib1g-dev file python
+libncurses5-dev gawk git libssl-dev gettext unzip zlib1g-dev file python
+sudo apt-get install build-essential libncurses5-dev gawk git libssl-dev gettext unzip zlib1g-dev file python
+sudo apt-get install build-essential libncurses5-dev gawk git libssl-dev gettext unzip zlib1g-dev file pythonb
+sudo apt-get install build-essential libncurses5-dev gawk git libssl-dev gettext unzip zlib1g-dev file python
+sudo apt-get install build-essential libncurses5-dev gawk git libssl-dev gettext unzip zlib1g-dev file python
+ls
+ls
+ls
+nano all-usb-cdc
+nanoxx all-usb-cdc
+nanox all-usb-cdc
+all-usb-cdc
+all-usb-cdc
+all-usb-cdc
+all-usb-cdc
+all-usb-cdc
+df
+df
 df
 top
-ls
-ls
-cd .
+htop
+up
 cd /
+ld
 ls
+renice
 ls
-ls
-ls
-ls
-ls
-dop
+renice -nice
+rnice
+htop
+killall ftop
+killall iftop
+htop
+nano /etc/ssh/sshd_config
+service dropbear disable
+service sshd enable
+service sshd start
+service sshd restart
+service dropbear sto
+killall dropbear
+demsg
+dmesg
+dmesg
+dmesgx
+dmesg
+dmesgx
+dmesg
+dmesgx
+lsblk
+opkg install lsblk
+lsblk
+nano /root/all-storage
 top
-tailog
-cd /etc/config
-nano dhcp
-nano dhcp
-nano dhcp
+ls
+cd bin
+ls
+nanox demsgx
+
+mv demsgx dmesg
+dmesg
+nano dmesg
+nano /etc/profile.d/*.sh
+mv demsgx dmesgx
+ls
+ls d*
+mv dmesg dmesgx
+cp dmesgx /usr/sbin
+nano /etc/profile.d/*.sh
+dmesg
+dmesgx
+dmesg
+ls
+cd ..
+dmesg
+bash
+dmesg
+dmesgx
+dmesg
 dmesg
 log
+nanox entwaresetup.sh
+./entwaresetup.sh
+mkdir /opt
+./entwaresetup.sh
+rm -R /opt
+ls
+nano entwaresetup.sh
+cd bin
+ls
+cp sysinfo.sh sysinfo
+nsh sysinfo
+n sysinfo
+ sysinfo
+n sysinfo
+ls
+upgrade-all.sh
+cd ..
+ls
+wandump
+ls
+opkg remove luci-app-safe-mode
+opkg list-installled
+opkg --list-installed
+opkg list-installed
+opkg remove luci-mod-failsafe
+opkg remove luci-compat
+opkg install luci-lib-nixio
+top
+df
+top
+htop
+ls
+sh
+up; opkg install bmx6 bmx7- bmx6-uci-config luci-app-bmx6
+up; opkg install bmx6 bmx7- bmx6-uci-config luci-app-bmx6
+up; opkg install bmx6 bmx7- bmx6-uci-config luci-app-bmx6
+ls
+top
+ls
+df
+up; opkg install bmx6 bmx6-uci-config luci-app-bmx6 bmx7-uci
+up; opkg install bmx6 bmx6-uci-config luci-app-bmx6 bmx7-uci-config
 dmesg
 log
 log
-dmesg
-nano /etc/config/dhcp
-nano /etc/config/dhcp
-service
-service dnsmast restart
-service dnsmast restart
-service dnsmasq restart
-service dnsmasq status
-service odhcpd restart
-renet
-dmesg
 log
 log
-nano /etc/config/dhcp
-nano /etc/config/dhcp
-nano /etc/config/dhcp
-nano /etc/config/dhcp
-nano /etc/config/dhcp
-tailog
-tdump
-nano /bin/tdump
-nano ./bin/tdump
-nano /bin/tdump
-nano ./bin/tdump
-tailog
-redns
-tailog
-log
-log
-log
-log
-log
-tailog
-tailog
-tailog
+ipv6
+
+ipv6 -i eth0.2
+wandump
+install nano
+installbb
+lx
+renice
+ls
 top
-nano /etc/config/dhcp
-nano /etc/config/dhcp
-nano /etc/config/dhcp
-ping SlayerWRT.lan
-ping SlayerWRT
-ping SlayerWRT.lan
-ping SlayerWRT.lan -6
-tailog
-redns
-tailog
-tailog
-tailog
-tailog
+ls
+df
+ls
+nano all
+ls
+df
+fstrim
+renice
+reboot
+   top
+upgrade-all.sh
+df
+opkg upgrade busybox
+renice
+renice -n -20 -u dnsmasq root
+cp renice /usr/bin/renice
+rm /usr/bin/renice
+ls
+ls renice
+ls -l
+renice.file
+rm renice.file
+mv renice bin
+rm /usr/sbin/renice
+rm /usr/bin/renice
+rm /sbin/renice
+rm /bin/renice
+rm /usr/bin/renice
+rm /usr/sbin/renice
+rm /sbin/renice
+rm /bin/renice
+renice
+cd bijn
+cd bin
+l
+ls
+./renice
+cd ..
+renice
+ls re
+ls -a
+ls -l
+ls re*
+cd bin
+ls
+ls re*
+nano renice
+renice
+renice
+sh renice
+bash renice
+./renice
+ls
+renice
+renice
+ls
+renice
+cd bin
+ls
+opkg upgrade busybox
+renice
+renice -n -20 -u root dnsmaq
+cd ..
+renice
+renice -n -20 -u root dnsmaq
+renice -n -20 -u root dnsmasq
+ls
 top
-tailog
+htop
+opkg install htop; htop
+ls
+nano rnice
+rnice
+nano rnice
+rnice
+rnice
+nano rnice
+ls
+cd bin
+ls
+cd ..
+cp rnice bin
+mv rnice bin
+ls
+rnice
+renice
+rnice
+nano rnice
+cd bin
+nano rnice
+rnice
+htop
+htop -d1
+htop -d22
+htop -d2
+htop -d3
+reboot
 top
-tailog
-tailog
-tailog
-tailog
-[A
-tailog
-tailog
-tailog
-tailog
-tailog
-redns
-tailog
+htop
+rnice
+htop
+df
+top
+ifstat
+iftop
+df
+ls
+opkg list
+df
+df
+nanox nicelist.install
+nanox nicelist.upgrade
+ls
+ls
+cp nicelist.install all-nicelist
+cp nicelist.upgrade all-nicelist-upgrade
+nanox all-upgrade
+nanox all-upgrade
+ls
+all-upgrade
+ls bin
+nanox all-upgrade
+ls
+all-upgrade
+mv all-nicelist all-nicelist-install
+ls
+df
+top
+htop
+htop
+top
+top -n
+top -h
+top -b
+top -h
+top -d1
+top -d0.1
+top -d.1
+top -d0
+top -d1
+htop -d0
+ls /dev
+ls
+all-storage
+opkg update; all-storage
+opkg update; all-storage

@@ -1,0 +1,5 @@
+#!/bin/bash
+truncate -s 128k 128kempty.bin или
+dd if=/dev/zero of=128kempty.bin bs=128k count=1
+cat 128kempty.bin $1 > tp_recovery.bin
+

@@ -1,34 +1,49 @@
 opkg update
 
-opkg install luci-app-upnp luci-app-sqm --force-overwrite
+opkg install luci-app-upnp luci-app-sqm
 
 opkg install nano luci-theme-material luci-ssl
 
-opkg install luci-proto-ipv6 ip 6to4 ipset
+opkg install luci-proto-ipv6 6to4 ip ipset
 
 opkg install iptables ip6tables tcpdump
 
-opkg install kmod-ip6-tunnel kmod-iptunnel6 ds-lite
+#opkg install kmod-ip6-tunnel kmod-iptunnel6 ds-lite
 
 opkg install resolveip iptables-mod-filter
 
 #opkg install ebtables kmod-ebtables-ipv6 kmod-ebtables-ipv4
 
-#opkg remove dnsmasq
-#opkg install dnsmasq-full --force-overwrite
+opkg remove dnsmasq
+opkg install dnsmasq-full --force-overwrite
 
-#opkg remove odhcpd-ipv6only
-#opkg install odhcpd --force-overwrite
+opkg remove odhcpd-ipv6only
+opkg install odhcpd --force-overwrite
 
 opkg install iftop bmon iptraf-ng
 
 opkg install bind-dig
 
-opkg install cfdisk kmod-usb-core kmod-usb-storage block-mount kmod-usb-storage-extras kmod-scsi-core block-mount e2fsprogs blkid kmod-fs-ext4 
+opkg install cfdisk parted kmod-usb-core kmod-usb-storage block-mount kmod-usb-storage-extras 
 
-opkg install kmod-usb-ohci kmod-usb-uhci mkf2fs fdisk kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-fs-f2fs
+opkg install kmod-usb-ohci kmod-usb-uhci kmod-scsi-core block-mount e2fsprogs blkid kmod-fs-ext4 fdisk kmod-fs-f2fs mkf2fs
+
+opkg install kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8
 
 opkg install openssh-server 
 
-opkg install openssh-sftp-server wget usbutils pciutils mc tune2fs bash htop
+opkg install openssh-sftp-server 
+
+opkg install wget usbutils pciutils mc tune2fs bash htop dmesg ifstat kmod-usb-net  kmod-usb3
+###$##########
+## modules ##
+#############
+##
+all-storage
+##
+all-base
+##
+
+
+
 
