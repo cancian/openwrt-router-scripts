@@ -1,0 +1,10 @@
+#!/bin/ash
+source /lib/functions/network.sh
+network_find_wan6 NET_IF6
+network_get_gateway6 NET_GW6 "${NET_IF6}"
+uci add network route6
+uci set network.@route6[-1].interface="${NET_IF6}"
+uci set network.@route6[-1].target="::/0"
+uci set network.@route6[-1].gateway="${NET_GW6}"
+uci commit network
+renet

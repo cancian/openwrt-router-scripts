@@ -1,0 +1,11 @@
+
+#no
+#ip -6 ro add default via 2001:470:1f2a:19b::2 dev sit0
+
+#works
+#ip -6 ro add 2001:470:1f2a:19b::2 dev sit0
+
+#works
+ip -6 addr add 2001:470:1f2b:19b::/64 dev br-lan
+
+

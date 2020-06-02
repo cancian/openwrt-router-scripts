@@ -1,0 +1,2 @@
+ifconfig 6to4-6to4 up
+tcpdump -i 6to4-6to4 -vvf
