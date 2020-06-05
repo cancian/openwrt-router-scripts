@@ -1,0 +1,3 @@
+opkg update
+opkg install luci-app-upnp luci-app-sqm nano luci-theme-material luci-proto-ipv6 ip 6in4 ip6tables luci-ssl openssh-sftp-server wget kmod-ipt-nat6 
+ 

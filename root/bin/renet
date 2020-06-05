@@ -1,0 +1,6 @@
+redns
+refire >& /dev/null
+/etc/init.d/network restart
+#refire >& /dev/null
+redns
+refire
