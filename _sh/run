@@ -1,0 +1,4 @@
+echo " " 
+echo RUN: $1 $2 $3 $4 $5
+echo " "
+ionice -c 1 nice -n -20 $1 $2 $3 $4 $5

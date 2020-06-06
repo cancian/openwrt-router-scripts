@@ -1,0 +1,21 @@
+#!/bin/csh
+
+#http://pkg.FreeBSD.org/FreeBSD:11:amd64/latest
+
+mount -t procfs proc ./proc
+mount -t devfs devfs ./dev
+chroot . ./bin/csh && echo "BSD rooting..."
+#/usr/local/etc/dhcpd.conf
+#tar Jxvf base-dbg.txz
+#tar Jxvf base.txz
+#tar Jxvf doc.txz
+#tar Jxvf kernel-dbg.txz
+#tar Jxvf kernel.txz
+#tar Jxvf lib32-dbg.txz
+#tar Jxvf lib32.txz
+#tar Jxvf src.txz
+#tar Jxvf tests.txz
+#tar Jxvf ports.txz
+
+
+

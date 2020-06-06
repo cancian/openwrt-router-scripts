@@ -1,0 +1,11 @@
+#!/bin/bash
+mkdir proc
+mkdir dev
+mkdir dev/pts
+mkdir var/lock
+mount --bind /proc ./proc
+mount --bind /dev ./dev
+mount -t devpts none ./dev/pts
+echo "CHROOTED INTO LEDE..."
+nice -n -20 chroot ./ ./bin/bash
+

@@ -1,14 +1,18 @@
 opkg update
 
+
+
+opkg install nano bash
+
+opkg install 6to4 luci-proto-ipv6 ip ipset iptables-mod-physdev #ipset-dns
+
 opkg install luci-app-upnp luci-app-sqm
 
 opkg install nano luci-theme-material luci-ssl
 
-opkg install luci-proto-ipv6 6to4 ip ipset
-
 opkg install iptables ip6tables tcpdump
 
-#opkg install kmod-ip6-tunnel kmod-iptunnel6 ds-lite
+opkg install kmod-ip6-tunnel kmod-iptunnel6 ds-lite xl2tpd 
 
 opkg install resolveip iptables-mod-filter
 
@@ -30,20 +34,18 @@ opkg install kmod-usb-ohci kmod-usb-uhci kmod-scsi-core block-mount e2fsprogs bl
 
 opkg install kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8
 
-opkg install openssh-server 
+#opkg install openssh-server 
 
-opkg install openssh-sftp-server 
+opkg install openssh-sftp-server
 
-opkg install wget usbutils pciutils mc tune2fs bash htop dmesg ifstat kmod-usb-net  kmod-usb3
+opkg install wget usbutils pciutils mc tune2fs bash htop dmesg ifstat kmod-usb-net kmod-usb3
 ###$##########
 ## modules ##
 #############
 ##
 all-storage
 ##
-all-base
+all-usb-cdc
 ##
-
-
-
-
+all-cdc
+##

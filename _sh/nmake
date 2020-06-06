@@ -1,0 +1,2 @@
+echo "SUPERDO: make $1 $2 $3 $4 $5 $6"
+sudo ionice -c 1 sudo nice -n -20 su cancian -c " IGNORE_ERRORS=1 make $1 $2 $3 $4 $5 $6 V=s"

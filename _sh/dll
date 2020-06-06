@@ -1,0 +1,2 @@
+ln -sf ../dl dl
+ln -sf ../feeds feeds

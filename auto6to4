@@ -264,7 +264,7 @@ delete_tunnel()
 
 
 # Name of tunnel interface to configure
-tunnel=tun6in4
+tunnel=6to4-wan6  #tun6in4
 ip4relay=192.88.99.1
 
 # IPv6 advertisement on local network
