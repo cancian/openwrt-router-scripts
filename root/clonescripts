@@ -1,2 +1,0 @@
-rm -R .config
-git clone git://github.com/cancian/openwrt-router-scripts .

@@ -34,7 +34,7 @@ opkg install kmod-usb-ohci kmod-usb-uhci kmod-scsi-core block-mount e2fsprogs bl
 
 opkg install kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8
 
-#opkg install openssh-server 
+opkg install openssh-server 
 
 opkg install openssh-sftp-server
 

@@ -1,6 +1,0 @@
-#!/bin/bash
-cp 02_network target/linux/ramips/mt7620/base-files/etc/board.d/02_network -v
-cp 01_leds    target/linux/ramips/mt7620/base-files/etc/board.d/01_leds -v
-cp mt7620.mk  target/linux/ramips/image/mt7620.mk -v
-cp mt7620a_tplink_archer-c5-v4.dts target/linux/ramips/dts/mt7620a_tplink_archer-c5-v4.dts -v
-

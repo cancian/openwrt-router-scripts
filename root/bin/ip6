@@ -1,7 +1,0 @@
-echo " "
-echo "## IP6 ROUTES ##"
-ip -6 route
-echo " "
-echo "## IP6 RULES ##"
-ip -6 rule
-echo " "

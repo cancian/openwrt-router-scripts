@@ -1,2 +1,0 @@
-#!/bin/bash
-opkg find *$1*

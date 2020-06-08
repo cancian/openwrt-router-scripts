@@ -1,6 +1,0 @@
-uci delete network.@route6[-1]
-uci add network route6
-uci set network.@route6[-1].interface="lan"
-uci set network.@route6[-1].target="::/0"
-uci set network.@route6[-1].gateway="2001:470:1f2a:19b::2"
-uci commit network

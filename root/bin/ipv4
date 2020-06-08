@@ -1,7 +1,0 @@
-echo " "
-echo "## IP4 ROUTES ##"
-ip -4 route
-echo " "
-echo "## IP4 RULES ##"
-ip -4 rule
-echo " "

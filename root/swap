@@ -1,3 +1,0 @@
-swapoff /dev/sda2
-mkswap /dev/sda2
-swapon /dev/sda2

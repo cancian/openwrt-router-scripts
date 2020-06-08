@@ -1,8 +1,0 @@
-#!/bin/sh
-if [ "ifup" = "$ACTION" ] && [ "wan6" = "$INTERFACE" ]; then
-	IPV6_ROUTE=$(ip route show | grep "216.66.87.14" | grep "br-lan")
-	if [ -n "$IPV6_ROUTE" ]; then
-		ip route del $IPV6_ROUTE
-		logger -t "ipv6_fix" "Deleted route: $IPV6_ROUTE"
-	fi
-fi
