@@ -1,3 +1,0 @@
-cp /root/resolv.conf.auto /etc/resolv.conf
-cp /root/hosts /etc
-#up

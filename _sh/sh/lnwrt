@@ -1,9 +1,0 @@
-mkdir /source/openwrt/files
-mkdir /source/openwrt/bin
-mkdir /source/openwrt/bin/targets
-mkdir /source/openwrt/bin/targets/x86
-mkdir /source/openwrt/bin/targets/x66/64-glibc
-cp -R /source/openwrt/bin/targets/x86/64-glibc/packages /source/openwrt/files
-rm -R /source/openwrt/bin/targets/x86/64-glibc/packages
-ln -s /source/openwrt/files/packages /source/openwrt/bin/targets/x86/64-glibc
-echo "liked to openwrt..."

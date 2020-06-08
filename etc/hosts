@@ -1,5 +1,0 @@
-127.0.0.1                  localhost ip6-localhost ip6-loopback localhost6 lo loopback local SlayerWRT ateus.network.local ateus.network lan
-::1                        localhost ip6-localhost ip6-loopback localhost6 lo loopback local SlayerWRT ateus.network.local ateus.network lan
-ff02::1    ip6-allnodes
-ff02::2    ip6-allrouters
-
