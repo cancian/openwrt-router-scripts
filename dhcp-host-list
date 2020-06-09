@@ -1,0 +1,93 @@
+config host
+	option dns '1'
+	option ip '192.168.1.5'
+	option name 'cancian-2020'
+	option mac '1C:6F:65:F3:C8:D6'
+
+config host
+	option dns '1'
+	option mac '3C:07:54:17:57:13'
+	option ip '192.168.1.30'
+	option name 'cancian-macbook'
+
+config host
+	option name 'blackarmor'
+	option dns '1'
+	option ip '192.168.1.200'
+	option mac '00:10:75:06:FD:6F'
+
+config host
+	option dns '1'
+	option mac 'E0:5F:45:D1:CD:55'
+	option ip '192.168.1.40'
+	option name 'cancian-iphone'
+
+config host
+	option name 'cancian-ipad'
+	option dns '1'
+	option mac '54:EA:A8:85:2D:5F'
+	option ip '192.168.1.50'
+
+config host
+	option name 'cancian-macbook-wifi'
+	option dns '1'
+	option mac '28:CF:DA:E6:76:6C'
+	option ip '192.168.1.35'
+
+config host
+	option name 'cancian-wifi'
+	option dns '1'
+	option ip '192.168.1.10'
+	option mac '30:B5:C2:13:2F:3A'
+
+config host
+	option name 'vmware-linux'
+	option dns '1'
+	option ip '192.168.1.250'
+	option mac '00:0C:29:94:58:5C'
+
+config host
+	option dns '1'
+	option mac '78:E7:D1:55:62:26'
+	option ip '192.168.1.15'
+	option name 'HP_LaserJet_P3015'
+
+config host
+	option dns '1'
+	option ip '192.168.1.20'
+	option mac '68:C4:4D:E0:B9:7B'
+	option name 'cancian-nexus9'
+
+config host
+	option dns '1'
+	option ip '192.168.1.25'
+	option mac '88:07:4B:E7:24:A6'
+	option name 'cancian-nexus5x'
+
+config host
+	option dns '1'
+	option mac '94:65:2D:C0:50:48'
+	option ip '192.168.1.45'
+	option name 'cancian-oneplus'
+
+config domain
+	option name 'slayerwrt.lan'
+	option ip '192.168.1.1'
+
+config domain
+	option name 'netflex.wan'
+	option ip '100.64.12.229'
+
+config domain
+	option name 'netflex.wan.gateway'
+	option ip '100.64.12.1'
+
+config domain
+	option name 'iPad'
+	option ip '192.168.1.199'
+
+config host
+	option name 'iPad'
+	option dns '1'
+	option mac 'F0:D1:A9:E2:F6:FF'
+	option ip '192.168.1.199'
