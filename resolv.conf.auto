@@ -1,12 +1,14 @@
-search slayerwrt.lan
+search lan
 nameserver 127.0.0.1
-nameserver fdf1:666:666::1
+nameserver ::1
 nameserver 192.168.1.1
-1.0.0.1
-1.1.1.1
-8.8.4.4
-8.8.8.8
-nameserver 177.11.176.10
-nameserver 177.11.176.11
-nameserver 177.11.176.31
-nameserver 177.11.176.32
+# Interface wan
+nameserver 1.0.0.1
+nameserver 1.1.1.1
+nameserver 187.102.79.220
+nameserver 187.102.79.222
+# Interface wan_6
+nameserver 2001:4860:4860::8888
+nameserver 2001:4860:4860::8844
+nameserver 2804:328c:0:1::2
+nameserver 2804:328c:0:1::3
