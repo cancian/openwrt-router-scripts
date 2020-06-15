@@ -1,0 +1,12 @@
+
+config ahcpd
+	option mode 'server'
+	list prefix 'fdf1:666:666::/48'
+	list name_server 'fdf1:666:666::1'
+	list name_server '192.168.1.1'
+	list ntp_server '2001:12ff:0:7::197'
+	list ntp_server '200.160.7.197'
+	list interface 'lan'
+	list interface 'wan'
+	list interface 'wan_6'
+

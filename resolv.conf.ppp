@@ -1,16 +1,10 @@
-search slayerwrt.local
-nameserver ::1
+search lan
 nameserver 192.168.1.1
-nameserver 8.8.8.8
-nameserver 200.175.5.139
-nameserver 187.102.79.222
-nameserver 200.221.11.101
-nameserver 129.250.35.250
 nameserver 187.102.79.220
 nameserver 187.102.79.222
 nameserver 200.221.11.100
+nameserver 1.0.0.1
+nameserver 8.8.4.4
 nameserver 2001:418:3ff::53
 nameserver 2001:4860:4860::8888
 nameserver 2001:4860:4860::8844
-
-

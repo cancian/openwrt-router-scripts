@@ -1,0 +1,14 @@
+
+config queue 'eth1'
+	option qdisc 'fq_codel'
+	option qdisc_advanced '0'
+	option enabled '1'
+	option interface 'pppoe-wan'
+	option download '85000000'
+	option upload '10000000'
+	option debug_logging '0'
+	option verbosity '5'
+	option script 'simplest_tbf.qos'
+	option linklayer 'ethernet'
+	option overhead '22'
+

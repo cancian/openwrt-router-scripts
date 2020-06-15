@@ -1,0 +1,142 @@
+config dnsmasq
+	option domainneeded	1
+	option boguspriv	1
+	option filterwin2k	0  # enable for dial on demand
+	option localise_queries	1
+	option rebind_protection 1  # disable if upstream must serve RFC1918 addresses
+	option rebind_localhost 1  # enable for RBL checking and similar services
+	list rebind_domain slaterwrt.local  # whitelist RFC1918 responses for domains
+	option local	'/local/'
+	option domain	'local'
+	option expandhosts	1
+	option nonegcache	0
+	option authoritative	1
+	option readethers	1
+	option leasefile	'/tmp/dhcp.leases'
+	option resolvfile	'/etc/resolv.conf.auto'
+	list server		'/slayerwrt.local/192.168.1.1'
+	option nonwildcard	1 # bind to & keep track of interfaces
+	list interface		br-lan
+	list notinterface	lo
+	#list bogusnxdomain     '64.94.110.11'
+	option localservice	1  # disable to allow DNS requests from non-local subnets
+
+config dhcp lan
+	option interface	lan
+	option start 	201
+	option limit	249
+	option leasetime	30h
+
+config dhcp wan
+	option interface	wan
+	option ignore	1
+
+config host
+	option dns '1'
+	option ip '192.168.1.5'
+	option name 'cancian-2020'
+	option mac '1C:6F:65:F3:C8:D6'
+
+config host
+	option dns '1'
+	option mac '3C:07:54:17:57:13'
+	option ip '192.168.1.30'
+	option name 'cancian-macbook'
+
+config host
+	option name 'blackarmor'
+	option dns '1'
+	option ip '192.168.1.200'
+	option mac '00:10:75:06:FD:6F'
+
+config host
+	option dns '1'
+	option mac 'E0:5F:45:D1:CD:55'
+	option ip '192.168.1.40'
+	option name 'cancian-iphone'
+
+config host
+	option name 'cancian-ipad'
+	option dns '1'
+	option mac '54:EA:A8:85:2D:5F'
+	option ip '192.168.1.50'
+
+config host
+	option name 'cancian-macbook-wifi'
+	option dns '1'
+	option mac '28:CF:DA:E6:76:6C'
+	option ip '192.168.1.35'
+
+config host
+	option name 'cancian-wifi'
+	option dns '1'
+	option ip '192.168.1.10'
+	option mac '30:B5:C2:13:2F:3A'
+
+config host
+	option name 'vmware-linux'
+	option dns '1'
+	option ip '192.168.1.250'
+	option mac '00:0C:29:94:58:5C'
+
+config host
+	option dns '1'
+	option mac '78:E7:D1:55:62:26'
+	option ip '192.168.1.15'
+	option name 'HP_LaserJet_P3015'
+
+config host
+	option dns '1'
+	option ip '192.168.1.65'
+	option mac '68:C4:4D:E0:B9:7B'
+	option name 'cancian-nexus9'
+
+config host
+	option dns '1'
+	option ip '192.168.1.60'
+	option mac '88:07:4B:E7:24:A6'
+	option name 'cancian-nexus5x'
+
+config host
+	option dns '1'
+	option mac '94:65:2D:C0:50:48'
+	option ip '192.168.1.45'
+	option name 'cancian-oneplus'
+
+config host
+	option mac '00:0C:29:CD:6E:AF'
+	option name 'cancian-linux'
+	option dns '1'
+	option ip '192.168.1.20'
+
+config host
+	option mac '50:C7:BF:EE:F1:70'
+	option name 'TL-SG108E'
+	option dns '1'
+	option ip '192.168.1.254'
+
+config domain
+	option ip '192.168.1.1'
+	option name 'slayerwrt'
+
+config domain
+	option ip '192.168.1.1'
+	option name 'slayerwrt.local'
+
+config domain
+	option ip 'fdf1:666:666::1'
+	option name 'slayerwrt.local'
+
+config domain
+	option name 'slayerwrt'
+	option ip 'fdf1:666:666::1'
+
+config domain
+	option name 'slayerwrt.public.ipv6'
+	option ip '2804:328c:2074:d700:ddbd:8147:ca34:4717'
+
+config domain
+	option name 'TP-LINK-SWITCH-TL-SG108E'
+	option ip '192.168.1.254'
+
+

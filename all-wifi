@@ -1,0 +1,1 @@
+opkg install kmod-carl9170 kmod-ath9k kmod-ath9k-htc 
