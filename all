@@ -8,25 +8,27 @@ opkg install 6to4 luci-proto-ipv6 ip ipset iptables-mod-physdev #ipset-dns
 
 opkg install luci-app-upnp luci-app-sqm
 
-opkg install nano luci-theme-material luci-ssl
+opkg install nano luci-theme-material luci-theme-openwrt2020 luci-ssl
 
 opkg install iptables ip6tables tcpdump
 
-opkg install kmod-ip6-tunnel kmod-iptunnel6 ds-lite xl2tpd 
+opkg install kmod-ip6-tunnel kmod-iptunnel6 #ds-lite xl2tpd 
 
 opkg install resolveip iptables-mod-filter
 
 #opkg install ebtables kmod-ebtables-ipv6 kmod-ebtables-ipv4
 
 opkg remove dnsmasq
-opkg install dnsmasq-full --force-overwrite
+opkg dnsmasq-dhcpv6 --force-overwrite --force-reinstall
+#opkg install dnsmasq-full --force-overwrite
 
-opkg remove odhcpd-ipv6only
-opkg install odhcpd --force-overwrite
+opkg remove odhcpd
+opkg install odhcpd-ipv6only --force-overwrite --force-reinstall
+#opkg install odhcpd --force-overwrite
 
 opkg install iftop bmon iptraf-ng
 
-opkg install bind-dig
+opkg install bind-dig mdnsresponder
 
 opkg install cfdisk parted kmod-usb-core kmod-usb-storage block-mount kmod-usb-storage-extras 
 
@@ -34,9 +36,13 @@ opkg install kmod-usb-ohci kmod-usb-uhci kmod-scsi-core block-mount e2fsprogs bl
 
 opkg install kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8
 
-opkg install openssh-server 
+#opkg install openssh-server 
 
 opkg install openssh-sftp-server
+
+opkg procd-ujail procd-ujail-console
+
+#opkg avahi stuff
 
 opkg install wget usbutils pciutils mc tune2fs bash htop dmesg ifstat kmod-usb-net kmod-usb3
 ###$##########
