@@ -1,25 +1,24 @@
 
 config dnsmasq
 	option domainneeded '1'
-	option boguspriv '1'
-	option filterwin2k '0'
 	option localise_queries '1'
 	option rebind_protection '1'
-	option rebind_localhost '1'
-	list rebind_domain 'slaterwrt.local'
-	option local '/local/'
-	option domain 'slayerwrt.local'
 	option expandhosts '1'
-	option nonegcache '0'
 	option authoritative '1'
 	option readethers '1'
 	option leasefile '/tmp/dhcp.leases'
 	option resolvfile '/etc/resolv.conf.auto'
-	list server '/slayerwrt.local/192.168.1.1'
-	option nonwildcard '1'
 	list interface 'br-lan'
+	option domain 'local'
+	option local '/local/'
+	option rebind_localhost '1'
+	option cachesize '10000'
+	option dnsforwardmax '512'
+	option localservice '0'
 	list notinterface 'lo'
-	option localservice '1'
+	list notinterface 'wan'
+	list notinterface 'pppoe-wan'
+	list notinterface 'wan_6'
 
 config dhcp 'lan'
 	option interface 'lan'
@@ -115,9 +114,9 @@ config host
 
 config host
 	option mac '50:C7:BF:EE:F1:70'
-	option name 'TL-SG108E'
 	option dns '1'
 	option ip '192.168.1.254'
+	option name 'tl-sg108e.local'
 
 config domain
 	option ip '192.168.1.1'
@@ -136,6 +135,10 @@ config domain
 	option ip 'fdf1:666:666::1'
 
 config domain
-	option name 'TP-LINK-SWITCH-TL-SG108E'
-	option ip '192.168.1.254'
+	option name 'blackarmor.local'
+	option ip '192.168.1.200'
+
+config domain
+	option ip '192.168.1.2'
+	option name 'dap2230.local'
 
