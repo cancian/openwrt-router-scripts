@@ -1,42 +1,44 @@
-files/lib/upgrade/keep.d/custom
-ls -a
-ash
+lspci
 ifconfig
-log
-top
-top -h
-top --help
-top -hv
-top -d1 -n10
-top 
-htop
-prvp;okde;ofdakx.,
-ofind jail
-install proc-ujail-consoled
-up; install proc-ujail proc-ujail-console
-up; install procd-ujail procd-ujail-console
-nano /root
-cd /root
-nano all
-log
+ifconfig -a
+wiif detect
+wiif config
+wifi config
+wifi status
+ifconfig -a
+wifi status
+ifconfig
+wifi config
+wifi enable
+wifi status
+ifconfig
+ifconfig wlan0 up
 dmesg
-iftop
+log
+rm -f /etc/config/wireless
+wifi detect > /etc/config/wireless
+nano /etc/config/wireless
+wifi detect 
+wifi enable
+wifi config
+wifi statud
+wifi status
+ls
+ifconfig
+wifi
+install hostapd-openssl
+ifoconfig -a
+ifconfig
+ifconfig -a
+ifconfig wlan0 up
+nano /etc/config/wireless
+ifconfig wlan0 up
 reboot
-cd /root
-ls
-mc
-LS
-ls
-cd ~
-cp .bashrc .ashrc
-cp ./.bashrc .ashrc
-ls -a
-ls .b*
-cp .bash_history .ash_history
-ls .b*
-ls .*
-ls .b* .a*
-cat .b* .a*
-cat
-ash
-cp .bashrc .ashrc
+log4cplus
+log4
+log
+log4cplus
+log4
+up
+refire
+reboot

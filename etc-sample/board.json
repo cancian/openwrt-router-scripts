@@ -1,0 +1,12 @@
+{
+	"model": {
+		"id": "google-panther",
+		"name": "Google Panther"
+	},
+	"network": {
+		"lan": {
+			"ifname": "eth0",
+			"protocol": "static"
+		}
+	}
+}

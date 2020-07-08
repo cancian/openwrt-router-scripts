@@ -1,1 +1,4 @@
+#!/bin/bash
 opkg update
+echo "##### opkg list updated ######" > /dev/tty0
+

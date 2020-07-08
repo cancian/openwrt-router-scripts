@@ -1,0 +1,6 @@
+
+config ahcpd
+	option mode 'forwarder'
+	list interface 'lan'
+	list interface 'wan'
+

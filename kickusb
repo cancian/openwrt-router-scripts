@@ -1,6 +1,5 @@
-#!/bin/ash
-sleep 5
-usbreset 2357:0600
-usbreset 002/003
-usbreset "USB 10/100/1000 LAN"
-
+#!/bin/bash
+#usbreset 2357:0600
+#usbreset 002/003
+/usr/bin/usbreset "USB 10/100/1000 LAN"
+/usr/bin/usbreset "TP-Link"
