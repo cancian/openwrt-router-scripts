@@ -3,38 +3,38 @@ config dnsmasq
 	option domainneeded '1'
 	option localise_queries '1'
 	option rebind_protection '1'
+	option rebind_localhost '1'
 	option expandhosts '1'
 	option authoritative '1'
 	option readethers '1'
 	option leasefile '/tmp/dhcp.leases'
-	option resolvfile '/etc/resolv.conf.auto'
 	list interface 'br-lan'
 	list notinterface 'lo'
-	option domain 'local'
-	option local '/local/'
 	option localservice '1'
-	option rebind_localhost '1'
-	option cachesize '10000'
-	option dnsforwardmax '512'
-	option logqueries '1'
-	option confdir '/tmp/dnsmasq.d'
-
-config dhcp 'lan'
-	option interface 'lan'
-	option start '201'
-	option limit '249'
-	option leasetime '30h'
-	option ra_default '1'
-	option ra 'server'
-	option dhcpv6 'server'
-	option ra_management '1'
-	option ra_slaac '1'
-	list ra_flags 'managed-config'
-	list ra_flags 'other-config'
+	option resolvfile '/etc/resolv.conf.auto'
+	option domain 'local'
+	option local '/lan/'
 
 config dhcp 'wan'
 	option interface 'wan'
 	option ignore '1'
+
+config odhcpd 'odhcpd'
+	option maindhcp '1'
+	option leasefile '/tmp/hosts/odhcpd'
+	option leasetrigger '/usr/sbin/odhcpd-update'
+	option loglevel '5'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option leasetime '12h'
+	option dhcpv6 'server'
+	option ra 'server'
+	option start '201'
+	option limit '249'
+	option ra_management '1'
+	option ra_default '1'
+	list domain 'lan'
 
 config host
 	option dns '1'
@@ -43,46 +43,10 @@ config host
 	option mac '1C:6F:65:F3:C8:D6'
 
 config host
-	option dns '1'
-	option mac '3C:07:54:17:57:13'
-	option ip '192.168.1.30'
-	option name 'cancian-macbook'
-
-config host
-	option name 'blackarmor'
-	option dns '1'
-	option ip '192.168.1.200'
-	option mac '00:10:75:06:FD:6F'
-
-config host
-	option dns '1'
-	option mac 'E0:5F:45:D1:CD:55'
-	option ip '192.168.1.40'
-	option name 'cancian-iphone'
-
-config host
-	option name 'cancian-ipad'
-	option dns '1'
-	option mac '54:EA:A8:85:2D:5F'
-	option ip '192.168.1.50'
-
-config host
-	option name 'cancian-macbook-wifi'
-	option dns '1'
-	option mac '28:CF:DA:E6:76:6C'
-	option ip '192.168.1.35'
-
-config host
 	option name 'cancian-wifi'
 	option dns '1'
 	option ip '192.168.1.10'
 	option mac '30:B5:C2:13:2F:3A'
-
-config host
-	option name 'vmware-linux'
-	option dns '1'
-	option ip '192.168.1.250'
-	option mac '00:0C:29:94:58:5C'
 
 config host
 	option dns '1'
@@ -91,10 +55,40 @@ config host
 	option name 'HP_LaserJet_P3015'
 
 config host
+	option mac '00:0C:29:CD:CC:CC'
+	option name 'cancian-ubnt'
 	option dns '1'
-	option ip '192.168.1.65'
-	option mac '68:C4:4D:E0:B9:7B'
-	option name 'cancian-nexus9'
+	option ip '192.168.1.20'
+
+config host
+	option dns '1'
+	option mac '3C:07:54:17:57:13'
+	option ip '192.168.1.30'
+	option name 'cancian-macbook'
+
+config host
+	option name 'cancian-macbook-wifi'
+	option dns '1'
+	option mac '28:CF:DA:E6:76:6C'
+	option ip '192.168.1.35'
+
+config host
+	option name 'cancian-ipad'
+	option dns '1'
+	option ip '192.168.1.40'
+	option mac 'F0:D1:A9:E2:F6:FF'
+
+config host
+	option dns '1'
+	option name 'cancian-oneplus'
+	option ip '192.168.1.50'
+	option mac '94:65:2D:C0:50:48'
+
+config host
+	option dns '1'
+	option name 'cancian-a20'
+	option ip '192.168.1.55'
+	option mac 'BA:00:91:A3:D8:AF'
 
 config host
 	option dns '1'
@@ -104,49 +98,92 @@ config host
 
 config host
 	option dns '1'
-	option mac '94:65:2D:C0:50:48'
-	option ip '192.168.1.45'
-	option name 'cancian-oneplus'
+	option ip '192.168.1.65'
+	option mac '68:C4:4D:E0:B9:7B'
+	option name 'cancian-nexus9'
 
 config host
-	option mac '00:0C:29:CD:6E:AF'
-	option name 'cancian-linux'
+	option name 'blackarmor'
 	option dns '1'
-	option ip '192.168.1.20'
+	option ip '192.168.1.200'
+	option mac '00:10:75:06:FD:6F'
 
 config host
 	option mac '50:C7:BF:EE:F1:70'
 	option dns '1'
+	option name 'tl-sg108e'
 	option ip '192.168.1.254'
-	option name 'tl-sg108e.local'
 
-config domain
-	option ip '192.168.1.1'
-	option name 'slayerwrt'
+config host
+	option dns '1'
+	option name 'cancian-atv'
+	option mac '00:1C:1D:37:09:05'
+	option ip '192.168.1.70'
 
-config domain
-	option ip '192.168.1.1'
-	option name 'slayerwrt.local'
+config host
+	option dns '1'
+	option name 'cancian-atv-wifi'
+	option mac '08:EA:40:62:EC:16'
+	option ip '192.168.1.75'
 
-config domain
-	option ip 'fdf1:666:666::1'
-	option name 'slayerwrt.local'
-
-config domain
-	option name 'slayerwrt'
-	option ip 'fdf1:666:666::1'
-
-config domain
-	option name 'blackarmor.local'
-	option ip '192.168.1.200'
-
-config domain
+config host
+	option name 'DAP-2230'
+	option dns '1'
+	option mac '10:BE:F5:C3:FA:A8'
 	option ip '192.168.1.2'
-	option name 'dap2230.local'
 
-config odhcpd 'odhcpd'
-	option maindhcp '0'
-	option leasefile '/tmp/hosts/odhcpd'
-	option leasetrigger '/usr/sbin/odhcpd-update'
-	option loglevel '4'
+config host
+	option dns '1'
+	option mac '20:C9:D0:0F:89:CB'
+	option ip '192.168.1.3'
+	option name 'airport-extreme'
 
+config host
+	option dns '1'
+	option mac 'CC:32:E5:A9:AD:31'
+	option ip '192.168.1.4'
+	option name 'tplink-archerc5'
+
+config host
+	option dns '1'
+	option mac '00:E0:20:34:CA:17'
+	option name 'Wireless-N'
+	option ip '192.168.1.6'
+
+config host
+	option mac 'F4:F2:6D:97:BB:DB'
+	option dns '1'
+	option ip '192.168.1.7'
+	option name 'tplink-repeater'
+
+config domain
+	option name 'slayerwrt'
+	option ip 'fdf1:666:666::1'
+
+config domain
+	option name 'slayerwrt'
+	option ip 'fdf1:666:666::100'
+
+config domain
+	option name 'slayerwrt'
+	option ip '192.168.1.1'
+
+config domain
+	option name 'slayerwrt'
+	option ip '192.168.1.100'
+
+config domain
+	option name 'slayerwrt.lan'
+	option ip '192.168.1.1'
+
+config domain
+	option name 'slayerwrt.local'
+	option ip '192.168.1.1'
+
+config domain
+	option name 'dns.slayerwrt'
+	option ip '127.0.0.1'
+
+config domain
+	option name 'dns.slayerwrt'
+	option ip '::1'

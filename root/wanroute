@@ -1,0 +1,7 @@
+uci delete network.@route6[-1]
+uci add network route6
+uci set network.@route6[-1].interface="wan6"
+uci set network.@route6[-1].target="::/0"
+uci set network.@route6[-1].gateway="fe80::ee08:6bff:fe6d:a27e"
+uci commit network
+renet

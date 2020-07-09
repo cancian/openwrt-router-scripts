@@ -7,21 +7,50 @@ config interface 'loopback'
 
 config globals 'globals'
 	option ula_prefix 'fdf1:666:666::/48'
-	option packet_steering '1'
 
 config interface 'lan'
 	option type 'bridge'
-	option ifname 'eth0'
+	option ifname 'eth0.1'
 	option proto 'static'
 	option ipaddr '192.168.1.1'
 	option netmask '255.255.255.0'
 	option igmp_snooping '1'
-	list dns '192.168.1.1'
 	option ip6assign '64'
+	list dns '192.168.1.1'
+	list dns '192.168.1.100'
 
 config interface 'wan'
-	option ifname 'eth1'
+	option ifname 'eth0.2'
 	option proto 'pppoe'
-	option username 'c373ea2e'
 	option password 'c7449f'
-	option macaddr 'EC:08:6B:57:F6:93'
+	option ipv6 'auto'
+	option username 'c373ea2e'
+	option service 'EC:08:6B:57:F6:93-c373ea2e-c7449f'
+	option macaddr '20:C9:D0:0F:89:CB'
+
+config switch
+	option name 'switch0'
+	option reset '1'
+	option enable_vlan '1'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '1'
+	option ports '2 0t'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '2'
+	option ports '3 0t'
+
+config interface 'lan2'
+	option proto 'static'
+	option netmask '255.255.255.0'
+	option ipaddr '192.168.1.100'
+	list dns '192.168.1.1'
+	list dns '192.168.1.100'
+	list ip6addr 'fdf1:666:666::1'
+	list ip6addr 'fdf1:666:666::100'
+	option ifname 'br-lan'
+	option ip6gw '::1'
+

@@ -1,0 +1,13 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+echo "## rc.local started ##" > /dev/tty0
+
+sleep 20
+./root/kickusb > /dev/tty0
+sleep 20
+. /root/bin/up > /dev/tty0
+
+
+tail -s 1 -f /tmp/system.log > /dev/tty0
+#iftop -i eth1 > /dev/tty0
+exit 0

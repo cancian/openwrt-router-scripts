@@ -1,0 +1,9 @@
+
+#### ROUTE DO TUNEL ###
+ip route del default via fe80::1 dev br-lan
+ip route del default via fe80::1 dev br-lan
+ip route del default
+ip route del default
+ip -6 route add default via 2002:c058:6301::
+ip -6 route add default via fe80::1 dev br-lan  proto kernel  metric 1024
+#######################

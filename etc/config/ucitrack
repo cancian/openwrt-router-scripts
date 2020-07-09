@@ -54,12 +54,9 @@ config samba
 config tinyproxy
 	option init 'tinyproxy'
 
-config ahcpd
-	option init 'ahcpd'
+config sqm
+	option init 'sqm'
 
 config upnpd
 	option init 'miniupnpd'
-
-config sqm
-	option init 'sqm'
 

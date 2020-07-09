@@ -1,9 +1,11 @@
-127.0.0.1 localhost
+127.0.0.1 localhost loopback lo slayerwrt
 
-::1     localhost ip6-localhost ip6-loopback
+::1     localhost ip6-localhost ip6-loopback slayerwrt localhost6 slayerwrt6
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 
-192.168.1.1     slayerwrt.local slayerwrt
-fdf1:666:666::1 slayerwrt.local slayerwrt
+192.168.1.1	 slayerwrt localhost dns.slayerwrt
+192.168.1.100	 slayerwrt localhost dns.slayerwrt
 
+fdf1:666:666:1	 slayerwrt localhost dns.slayerwrt
+f1f1:666:666:100 slayerwrt localhost dns.slayerwrt

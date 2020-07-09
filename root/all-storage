@@ -1,0 +1,4 @@
+opkg install block-mount kmod-fs-ext4 kmod-usb-storage e2fsprogs 
+opkg install kmod-usb-ohci kmod-usb-uhci fdisk cfdisk kmod-usb-storage-uas 
+opkg install kmod-fs-ext4 kmod-usb2 kmod-fs-f2fs kmod-usb3 kmod-usb3 lsblk tune2fs blkid
+opkg install f2fs-tools f2fsck libf2fs mkf2fs kmod-fs-f2fs

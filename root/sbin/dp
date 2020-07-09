@@ -1,0 +1,2 @@
+rm "$1" && nice -n 20 ionice -c 0 -n 1;
+ make target/linux/prepare

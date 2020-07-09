@@ -1,0 +1,2 @@
+make toolchain/{$1}
+make toolchain/{prepare,compile,install}

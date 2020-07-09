@@ -2,20 +2,24 @@
 config system
 	option ttylogin '0'
 	option log_size '64'
-	option urandom_seed '0'
+	option urandom_seed '1'
+	option zonename 'America/Recife'
+	option hostname 'SlayerWRT'
 	option log_proto 'udp'
 	option conloglevel '8'
 	option cronloglevel '5'
-	option log_file '/tmp/system.log'
-	option zonename 'America/Sao Paulo'
 	option timezone '<-03>3'
-	option hostname 'slayerwrt.local'
+	option log_file '/tmp/system.log'
 
 config timeserver 'ntp'
 	option enable_server '1'
-	list server '0.openwrt.pool.ntp.org'
-	list server '1.openwrt.pool.ntp.org'
-	list server '2.openwrt.pool.ntp.org'
-	list server '3.openwrt.pool.ntp.org'
-	list server 'gps.ntp.br'
+	list server '52.67.171.238'
+	list server '200.160.7.197'
+
+config led
+	option dev '1-1'
+	option sysfs 'ubnt:white:dome'
+	option default '1'
+	option trigger 'usbdev'
+	option name 'led'
 

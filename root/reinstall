@@ -1,0 +1,2 @@
+opkg install $1 $2 --force-reinstall --force-overwrite --force-depends
+

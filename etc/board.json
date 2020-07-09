@@ -1,15 +1,49 @@
 {
 	"model": {
-		"id": "google-panther",
-		"name": "Google Panther"
+		"id": "ubnt,unifiac-pro",
+		"name": "Ubiquiti UniFi-AC-PRO"
+	},
+	"switch": {
+		"switch0": {
+			"enable": true,
+			"reset": true,
+			"ports": [
+				{
+					"num": 0,
+					"device": "eth0",
+					"need_tag": false,
+					"want_untag": false
+				},
+				{
+					"num": 2,
+					"role": "lan"
+				},
+				{
+					"num": 3,
+					"role": "wan"
+				}
+			],
+			"roles": [
+				{
+					"role": "lan",
+					"ports": "2 0t",
+					"device": "eth0.1"
+				},
+				{
+					"role": "wan",
+					"ports": "3 0t",
+					"device": "eth0.2"
+				}
+			]
+		}
 	},
 	"network": {
 		"lan": {
-			"ifname": "eth0",
+			"ifname": "eth0.1",
 			"protocol": "static"
 		},
 		"wan": {
-			"ifname": "eth1",
+			"ifname": "eth0.2",
 			"protocol": "dhcp"
 		}
 	}

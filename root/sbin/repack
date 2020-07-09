@@ -1,0 +1,1 @@
+run make package/$1/{clean,compile} V=sc

@@ -1,0 +1,7 @@
+
+config ttyd
+	option interface '@lan'
+	option command '/usr/libexec/login.sh'
+	option port '666'
+	option ipv6 '1'
+
