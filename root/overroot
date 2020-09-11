@@ -1,1 +1,0 @@
-cp -Ra bin etc lib root sbin usr www /mnt

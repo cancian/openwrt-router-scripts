@@ -17,13 +17,13 @@ opkg install resolveip iptables-mod-filter
 opkg install ebtables kmod-ebtables-ipv6 kmod-ebtables-ipv4
 
 ##
-opkg remove  dnsmasq
-opkg remove  dnsmasq-dhcpv6
-opkg install dnsmasq-full --force-reinstall --force-overwrite
-
+#opkg remove  dnsmasq
+#opkg remove  dnsmasq-dhcpv6
+#opkg install dnsmasq-full --force-reinstall --force-overwrite
+all-opt
 ##
-opkg remove  odhcpd-ipv6only
-opkg install odhcpd --force-reinstall --force-reinstall
+#opkg remove  odhcpd-ipv6only
+#opkg install odhcpd --force-reinstall --force-reinstall
 
 ##
 opkg install iftop bmon iptraf-ng

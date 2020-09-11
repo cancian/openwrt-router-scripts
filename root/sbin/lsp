@@ -1,3 +1,0 @@
-#!/bin/bash
-clear
-lt /home/cancian/Desktop/source/files/packages && sleep 2 && lsp

@@ -1,2 +1,0 @@
-gedit $1 && nice -n 20 ionice -c 0 make target/linux/prepare;
-echo $1

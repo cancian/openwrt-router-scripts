@@ -1,6 +1,0 @@
-#!/bin/csh
-mkdir proc
-mkdir dev
-mount -t procfs proc ./proc
-mount -t devfs devfs ./dev
-chroot . ./bin/csh

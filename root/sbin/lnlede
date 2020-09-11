@@ -1,5 +1,0 @@
-mkdir /source/lede/files
-cp -R /source/lede/bin/targets/x86/64-glibc/packages /source/lede/files
-rm -R /source/lede/bin/targets/x86/64-glibc/packages
-ln -s /source/lede/files/packages /source/lede/bin/targets/x86/64-glibc
-echo "liked to lede..."

@@ -1,3 +1,0 @@
-#route -A inet6 add default dev br-lan
-route -A inet6 add default dev lo
-

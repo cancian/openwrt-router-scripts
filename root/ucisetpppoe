@@ -1,6 +1,0 @@
-uci set network.wan.proto='pppoe'
-uci set network.wan.macaddr='EC:08:6B:57:F6:93'
-uci set network.wan.username='c373ea2e'
-uci set network.wan.password='c7449f'
-uci commit
-renet

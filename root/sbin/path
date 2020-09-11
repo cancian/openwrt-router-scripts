@@ -1,5 +1,0 @@
-#!/bin/bash
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/root/Desktop/source:/:/root:/source:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-export PATH=$PATH
-echo $PATH
-echo 'export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/root/Desktop/source:/:/root:/source:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'

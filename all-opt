@@ -1,0 +1,18 @@
+
+
+
+
+##
+opkg remove  dnsmasq
+opkg remove  dnsmasq-full
+opkg install dnsmasq-dhcpv6 --force-reinstall --force-overwrite
+
+##
+opkg remove  odhcpd
+opkg install odhcpd-ipv6only --force-reinstall --force-overwrite
+
+#opkg install odhcpd-ipv6only
+#opkg install dnsmasq-dhcpd6
+
+opkg remove ath10k-firmware-qca988x-ct
+opkg install ath10k-firmware-qca988x-ct-htt --force-reinstall --force-overwrite

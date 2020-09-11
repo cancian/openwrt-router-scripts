@@ -1,1 +1,0 @@
-make package/$1/{compile,install} V=sc

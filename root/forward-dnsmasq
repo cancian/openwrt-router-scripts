@@ -1,7 +1,0 @@
-
-
-uci add_list dhcp.@dnsmasq[-1].server='192.168.1.1'
-uci set dhcp.@dnsmasq[-1].noresolv=1
-uci commit
-
-

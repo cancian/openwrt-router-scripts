@@ -1,3 +1,0 @@
-set MAKE_JOBS_UNSAFE=1
-nice -20 make $1 $2 $3 MAKE_JOBS_UNSAFE=1
-

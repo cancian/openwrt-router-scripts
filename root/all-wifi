@@ -1,2 +1,0 @@
-opkg install hostapd-openssl kmod-carl9170 kmod-ath9k kmod-ath9k-htc 
-wifi config

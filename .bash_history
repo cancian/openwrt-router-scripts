@@ -42,3 +42,44 @@ log4
 up
 refire
 reboot
+ls
+fix-ip6-routes
+taillog
+tlog
+lw
+le
+ls
+nano /etc/resolv.conf
+nano /etc/hosts
+nano /etc/hosts
+nano /etc/hosts
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+log
+nano /etc/hosts
+reboot

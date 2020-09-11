@@ -1,1 +1,0 @@
-nano $1 && chmod +x $1
